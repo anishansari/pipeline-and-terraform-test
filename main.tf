@@ -20,7 +20,7 @@ variable "imagebuild" {
 
 
 resource "azurerm_resource_group" "anish_terraform_test" {
-  name = "tfmainrg"
+  name = "ans-tes-grp"
   location = "Australia East"
 }
 
