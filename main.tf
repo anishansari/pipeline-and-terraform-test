@@ -19,13 +19,13 @@ variable "imagebuild" {
 
 
 
-resource "azurerm_resource_group" "tf_test" {
+resource "azurerm_resource_group" "anish_terraform_test" {
   name = "tfmainrg"
   location = "Australia East"
 }
 
 resource "azurerm_container_group" "tfcg_test" {
-  name                      = "weatherapi"
+  name                      = "node-taste-anish"
   location                  = azurerm_resource_group.tf_test.location
   resource_group_name       = azurerm_resource_group.tf_test.name
 
@@ -34,8 +34,8 @@ resource "azurerm_container_group" "tfcg_test" {
   os_type             = "Linux"
 
   container {
-      name            = "weatherapi"
-      image           = "binarythistle/weatherapi:${var.imagebuild}"
+      name            = "node-tes-anish"
+      image           = "anish78/nodetest:${var.imagebuild}"
         cpu             = "1"
         memory          = "1"
 
