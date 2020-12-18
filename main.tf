@@ -5,8 +5,8 @@ provider "azurerm" {
 
 terraform {
     backend "azurerm" {
-        resource_group_name  = "tf_rg_blobstore"
-        storage_account_name = "tfstoragebinarythistle"
+        resource_group_name  = "anishRG"
+        storage_account_name = "terraformstfl"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
     }
