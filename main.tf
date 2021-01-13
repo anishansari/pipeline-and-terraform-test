@@ -30,7 +30,7 @@ resource "azurerm_container_group" "tfcg_test" {
   resource_group_name       = azurerm_resource_group.anish_terraform_test.name
 
   ip_address_type     = "public"
-  dns_name_label      = "binarythistlewa"
+  dns_name_label      = "anish78"
   os_type             = "Linux"
 
   container {
